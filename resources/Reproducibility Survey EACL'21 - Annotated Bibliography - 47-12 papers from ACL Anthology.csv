@@ -1,4 +1,4 @@
-bibtex,Authors,Title,Venue,Year,Abbr venue,Abstract,Paper Summary,Definitions of reproducibility or replicability etc?,"Notes, e.g. findings, important points, etc. not made in abstract",Reproducible / Replicable according to authors? ,Links
+bibtex,Authors,Title,Venue,Year,Abbr venue,Abstract,Paper Summary,Definitions of reproducibility or replicability etc?,"Notes, e.g. findings, important points, etc. not made in abstract",Reproducible / Replicable according to authors? ,Links,Type of paper (Short / Long),
 "@inproceedings{schwartz-2010-reproducible,
     title = ""Reproducible Results in Parsing-Based Machine Translation: The {JHU} Shared Task Submission"",
     author = ""Schwartz, Lane"",
@@ -21,7 +21,7 @@ Twofold: (1) to build WMT'10 system using only open-access tools and data; (2) r
 WMT'10 and WMT'09 results, with their WMT'10 German-English system ranking top in terms of TER.
 5. paper's conclusions and/or main contributions
 No explicit conclusions. Early example of diagnosing the reproducibility problem in NLP systems, plus demonstrates how full system recreation can be achieved through code and data sharing.
-",,,,
+",,,,,,
 "@inproceedings{fokkens-etal-2013-offspring,
     title = ""Offspring from Reproduction Problems: What Replication Failure Teaches Us"",
     author = ""Fokkens, Antske  and
@@ -64,34 +64,6 @@ Results differed for WNS task in unspecified ways, and were 20 F-score points lo
 * tried to reproduce values of similarity measures on WordNet & found they differed even with same software and Wordnet version, hence must be other factors influence outputs; found: different approaches to POS-tag ambiguity resolution, choice of gold standard, resolution of ties in Spearman's calcualtion; found very large maximal differences in Spearman's when systematically varying these factors, hence very different rankings of the measures.
 * NER and WordNet similarity both illustrate difficulty in reproducing results
 * small differences in implementational choices have large effects on performance measures
-",,
-"@inproceedings{borgholt-etal-2015-rating,
-    title = ""The Rating Game: Sentiment Rating Reproducibility from Text"",
-    author = ""Borgholt, Lasse  and
-      Simonsen, Peter  and
-      Hovy, Dirk"",
-    booktitle = ""Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing"",
-    month = sep,
-    year = ""2015"",
-    address = ""Lisbon, Portugal"",
-    publisher = ""Association for Computational Linguistics"",
-    url = ""https://www.aclweb.org/anthology/D15-1301"",
-    doi = ""10.18653/v1/D15-1301"",
-    pages = ""2527--2532"",
-    abstract = ""Sentiment  analysis  models  often  use  ratings  as  labels,  assuming  that  these  ratings  reflect  the  sentiment  of  the  accompanying  text.   We  investigate (i) whether human readers can infer ratings from review  text, (ii) how  human  performance compares to a regression model, and (iii) whether model performance is affected by the  rating  `source'  (i.e.   original  author vs.  annotator).   We  collect  IMDb  movie reviews with author-provided ratings, and have them re-annotated by crowdsourced and  trained  annotators. Annotators  reproduce  the  original  ratings  better  than a  model,   but  are  still  far  off  in  more than 5% of the cases.  Models trained on annotator-labels outperform those trained on  author-labels,  questioning  the  usefulness  of  author-rated  reviews  as  training data for sentiment analysis.""
-}
-","Borgholt, Lasse  and
-      Simonsen, Peter  and
-      Hovy, Dirk",The Rating Game: Sentiment Rating Reproducibility from Text,Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing,2015,EMNLP,"Sentiment  analysis  models  often  use  ratings  as  labels,  assuming  that  these  ratings  reflect  the  sentiment  of  the  accompanying  text.   We  investigate (i) whether human readers can infer ratings from review  text, (ii) how  human  performance compares to a regression model, and (iii) whether model performance is affected by the  rating  `source'  (i.e.   original  author vs.  annotator).   We  collect  IMDb  movie reviews with author-provided ratings, and have them re-annotated by crowdsourced and  trained  annotators. Annotators  reproduce  the  original  ratings  better  than a  model,   but  are  still  far  off  in  more than 5% of the cases.  Models trained on annotator-labels outperform those trained on  author-labels,  questioning  the  usefulness  of  author-rated  reviews  as  training data for sentiment analysis.","1. one sentence summary of what paper is about
-[text]
-2. paper's central goal/question/hypothesis
-[text]
-3. methodology
-[text]
-4. reported results
-[text]
-5. paper's conclusions and/or main contributions
-[text]
 ",,,,
 "@inproceedings{neveol-etal-2016-replicability,
     title = ""Replicability of Research in Biomedical Natural Language Processing: a pilot evaluation for a coding task"",
@@ -122,7 +94,7 @@ Results differed for WNS task in unspecified ways, and were 20 F-score points lo
 [text]
 5. paper's conclusions and/or main contributions
 [text]
-",,,,
+",,,,,,
 "@inproceedings{fares-etal-2017-word,
     title = ""Word vectors, reuse, and replicability: Towards a community repository of large-text resources"",
     author = ""Fares, Murhaf  and
@@ -142,16 +114,15 @@ Results differed for WNS task in unspecified ways, and were 20 F-score points lo
       Kutuzov, Andrey  and
       Oepen, Stephan  and
       Velldal, Erik","Word vectors, reuse, and replicability: Towards a community repository of large-text resources",Proceedings of the 21st Nordic Conference on Computational Linguistics,2017,WS,"This paper describes an emerging shared repository of large-text resources for creating word vectors, including pre-processed corpora and pre-trained vectors for a range of frameworks and configurations.   This will facilitate reuse, rapid experimentation, and replicability of results.","1. one sentence summary of what paper is about
-[text]
+Demo paper with the aim of providing shared repository for creating word vectors with a focus on reproducibility of results
 2. paper's central goal/question/hypothesis
-[text]
+To create a shared repository of large-text resources for word vectors, including pre-processed corpora and pre-trained vector models to facilitate rapid experimentation and replicability
 3. methodology
-[text]
+Trained embeddings using GloVe (Pennington et al., 2014) and Continuous Skipgram (Mikolov, Chen, et al., 2013) with negative sampling (SGNS).
 4. reported results
-[text]
+Accuracy for 2 models are reported on Simlex-999 (Hill et al., 2015) and the Google Analogies Dataset (Mikolov, Chen, et al., 2013)
 5. paper's conclusions and/or main contributions
-[text]
-",,marginal relevance,,
+Created the repository and web servcie with pre-trained vectors for English and Norwegian.  ",No,marginal relevance,,,Short,Demo paper
 "@inproceedings{dakota-kubler-2017-towards,
     title = ""Towards Replicability in Parsing"",
     author = {Dakota, Daniel  and
@@ -179,7 +150,7 @@ Different choices produce improvement of around 10 F1 score points on average fr
 5. paper's conclusions and/or main contributions
 Many settings, parameters and pre/post-processing components have substantial effects on results, and should therefore be meticulously reported and documented in order to enable reproduction",,"* documents the lack of information about important (and score-affecting) details such as treebank preprocessing and evaluation scripts, even in leading papers
 * main point in paper is lack of documentation making replciation difficult, but this paper itself is less than perfect (e.g. no links to scripts)
-* paper doesn't conduct reproduction attempts, but takes and existing parser and systematically explores the effect of different script settings and component choices on results across multiple languages and datasets.",,
+* paper doesn't conduct reproduction attempts, but takes and existing parser and systematically explores the effect of different script settings and component choices on results across multiple languages and datasets.",,,,
 "@article{dror-etal-2017-replicability,
     title = ""Replicability Analysis for Natural Language Processing: Testing Significance with Multiple Datasets"",
     author = ""Dror, Rotem  and
@@ -207,7 +178,7 @@ Many settings, parameters and pre/post-processing components have substantial ef
 [text]
 5. paper's conclusions and/or main contributions
 [text]
-",,,,
+",,,,,,
 "@inproceedings{marrese-taylor-matsuo-2017-replication,
     title = ""Replication issues in syntax-based aspect extraction for opinion mining"",
     author = ""Marrese-Taylor, Edison  and
@@ -232,7 +203,7 @@ Many settings, parameters and pre/post-processing components have substantial ef
 [text]
 5. paper's conclusions and/or main contributions
 [text]
-",,,,
+",,,,,,
 "@inproceedings{horsmann-zesch-2017-lstms,
     title = ""Do {LSTM}s really work so well for {P}o{S} tagging? {--} A replication study"",
     author = ""Horsmann, Tobias  and
@@ -260,7 +231,7 @@ LSTM generally better, but with smaller tag set sizes differences between LSTM, 
 The study confirmed that the LSTM tagger reported by Plank et al. (2016) also outperforms CRF and HMM taggers on fine-grained tagsets. LSTM tagger also comes closest to reaching performance levels of language-specific taggers from the literature, outperforming the latter by small margins on two out of three languages on which this was tested according to Table 4; very thin evidence for concluding ""[o]n morphologically fine tagsets, even the LSTM tagger fails to reach results reported in the literature when reproducing those setups"" - one single result on very fine grained tag set.
 ",,"* this aims to reproduce a general result, namely that LSTMs are better than CRFs at language-independent POS-tagger training
 * doesn't distinguish between 'tagger' and 'method for creating a tagger' which isn't helpful
-* this seems to be an adversarial reproduction attempt, i.e. they were expecting results not to be better for LSTM when switching to fine grained tagsets",,
+* this seems to be an adversarial reproduction attempt, i.e. they were expecting results not to be better for LSTM when switching to fine grained tagsets",,,,
 "@inproceedings{morey-etal-2017-much,
     title = ""How much progress have we made on {RST} discourse parsing? A replication study of recent results on the {RST}-{DT}"",
     author = ""Morey, Mathieu  and
@@ -279,16 +250,17 @@ The study confirmed that the LSTM tagger reported by Plank et al. (2016) also ou
 ","Morey, Mathieu  and
       Muller, Philippe  and
       Asher, Nicholas",How much progress have we made on {RST} discourse parsing? A replication study of recent results on the {RST}-{DT},Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing,2017,EMNLP,"This article evaluates purported progress over the past years in RST discourse parsing. Several studies report a relative error reduction of 24 to 51% on all metrics that authors attribute to the introduction of distributed representations of discourse units. We replicate the standard evaluation of 9 parsers, 5 of which use distributed representations, from 8 studies published between 2013 and 2017, using their predictions on the test set of the RST-DT. Our main finding is that most recently reported increases in RST discourse parser performance are an artefact of differences in implementations of the evaluation procedure. We evaluate all these parsers with the standard Parseval procedure to provide a more accurate picture of the actual RST discourse parsers performance in standard evaluation settings. Under this more stringent procedure, the gains attributable to distributed representations represent at most a 16% relative error reduction on fully-labelled structures.","1. one sentence summary of what paper is about
-[text]
+This paper replicates the evaluation of the parsers on the test set of Rhetorical Structure Theory Discourse Treebank (RST-DT) dataset and argues to re-examine and standardize the evaluation procedures used for RST discourse parsing
 2. paper's central goal/question/hypothesis
-[text]
+Evaluate the progress in RST discoure plannig. Does distributed representations of discourse units really help in error reduction?
 3. methodology
-[text]
+Reproduce predictions for 9 parsers from 8 studies. Identified two groups of studies - one which reports micro F1 scores and the other reports macro F1.
+Used standard Parseval procedure instead of Marcu’s adaptation RST-Parseval as the main evaluation procedure and compute scores on discourse structures with no label (S for for Span or labelled with nuclearity (N), relation (R) or both (F for Full)). 
 4. reported results
-[text]
+Replication attempts of micro-averaged F1 scores for one group and macro-averaged F1 for the other are reported. Finally Micro-averaged F1 scores using original Parseval are provided for future benchmark
 5. paper's conclusions and/or main contributions
-[text]
-",,,,
+Increase in parser perfomance is due to the different implementations of evaluation procedures. Calls for 
+",No,*Makes an argument about the implementation of evaluation procedure as well as the averaging method for reporting results (micro vs macro F1),,,,
 "@inproceedings{htut-etal-2018-grammar,
     title = ""Grammar Induction with Neural Language Models: An Unusual Replication"",
     author = ""Htut, Phu Mon  and
@@ -318,7 +290,7 @@ Reports results competitive with supervised WSJ parsing from early 2000s. Tuning
 PRPN model ""strikingly effective"" at latent tree learning. Joint modelling of parsing and LM seems to work best.
 ",,"* very hard to follow, far too short, no proper explanation of how replicated and how went beyond
 * mentions replicating perpexity score of one model, but original paper doesn't have the same value (61.1) in it
-* all we really know is that they recreated a model in various versions, but not what they tried to recreate exactly, under what conditions, and what the outcome was in each case",,
+* all we really know is that they recreated a model in various versions, but not what they tried to recreate exactly, under what conditions, and what the outcome was in each case",,,,
 "@article{crane-2018-questionable,
     title = ""Questionable Answers in Question Answering Research: Reproducibility and Variability of Published Results"",
     author = ""Crane, Matt"",
@@ -345,7 +317,7 @@ model definition, library versions and dependencies should be specified either t
 ","* Mentions issues in IR of weak baselines (Armstrong et al., 2009) and reproducibility (Arguello et al., 2016; Lin et al., 2016)","Nice references such as : 
 * need for replicable and reproducible results being included in a list of challenges for the ACL Challenges for ACL: ACL Presidential Address 2017.https://www.slideshare.net/aclanthology/ joakim-nivre-2017-presidential- address-acl-2017-challenges-for- acl/ 
 *Based on theoretical reasoning it has been suggested that the reliability of findings published in the scientific literature decreases with the popularity of a research field” (Pfeiffer and Hoffmann, 2009).  -- can use this in journal paper
-* Simon (2017) observed a 16% increase of test accuracy for the same model (from 0.5438 to 0.6197) by changing the computation backend from Tensorflow to MXNet.",,
+* Simon (2017) observed a 16% increase of test accuracy for the same model (from 0.5438 to 0.6197) by changing the computation backend from Tensorflow to MXNet.",,,,
 "@inproceedings{branco-2018-depleting,
     title = ""We Are Depleting Our Research Subject as We Are Investigating It: In Language Technology, more Replication and Diversity Are Needed"",
     author = ""Branco, Ant{\'o}nio"",
@@ -358,16 +330,16 @@ model definition, library versions and dependencies should be specified either t
     abstract = ""In this paper, we present an analysis indicating that, in language technology, as we are investigating natural language we are contributing to deplete it in the sense that we are contributing to reduce the diversity of languages.  To address this circumstance, we propose that more replication and reproduction and more language diversity need to be taken into account in our research activities.""
 }
 ","Branco, Ant{\'o}nio","We Are Depleting Our Research Subject as We Are Investigating It: In Language Technology, more Replication and Diversity Are Needed",Proceedings of the Eleventh International Conference on Language Resources and Evaluation ({LREC} 2018),2018,LREC,"In this paper, we present an analysis indicating that, in language technology, as we are investigating natural language we are contributing to deplete it in the sense that we are contributing to reduce the diversity of languages.  To address this circumstance, we propose that more replication and reproduction and more language diversity need to be taken into account in our research activities.","1. one sentence summary of what paper is about
-[text]
+Position paper/opinion piece which argues that the NLP community should focus on language diveristy as part of science ethics. On a similar note, the paper also advocates reproducibility and replicability of research results.  
 2. paper's central goal/question/hypothesis
-[text]
+To provide analysis of the depleting role of different languages in the NLP community
 3. methodology
-[text]
+Not a replication study but an opinion piece. Provides analysis and literature review backing the claims of depleting diversity from the technological viewpoint. 
 4. reported results
-[text]
+No results are reported
 5. paper's conclusions and/or main contributions
-[text]
-",,marginal,,
+Provides analysis and claims depleting language diversity is two fold - 1. NLP researchers only focus on English 2. Historical technological shock providing social and economical competitive advantages to the English language
+","Following the text introducing a new Special Section of the Language Re- sources and Evaluation journal on reproducibility and repli- cability (Branco et al., 2017): “Reproduction of results en- tails arriving at the same overall conclusion(s), as opposed to finding identical values for some measure (Drummond, 2009), (Dalle, 2012), (Buchert and Nussbaum, 2011); that is, to appropriately validate a set of results, scientists should strive to reproduce the same answer to a given research question by different means, possibly by re-implementing an algorithm or evaluating it on a new dataset. Replication has a somewhat more limited aim, typically involving run- ning the exact same system under the same conditions in order to arrive at the same output result.”",marginal,NA,,Short,
 "@inproceedings{cohen-etal-2018-three,
     title = ""Three Dimensions of Reproducibility in Natural Language Processing"",
     author = ""Cohen, K. Bretonnel  and
@@ -407,7 +379,7 @@ model definition, library versions and dependencies should be specified either t
 [text]
 5. paper's conclusions and/or main contributions
 [text]
-",,,,
+",,,,,,
 "@inproceedings{gartner-etal-2018-preserving,
     title = ""Preserving Workflow Reproducibility: The {R}e{P}lay-{DH} Client as a Tool for Process Documentation"",
     author = {G{\""a}rtner, Markus  and
@@ -424,16 +396,16 @@ model definition, library versions and dependencies should be specified either t
 ","G{\""a}rtner, Markus  and
       Hahn, Uli  and
       Hermann, Sibylle",Preserving Workflow Reproducibility: The {R}e{P}lay-{DH} Client as a Tool for Process Documentation,Proceedings of the Eleventh International Conference on Language Resources and Evaluation ({LREC} 2018),2018,LREC,"In  this  paper  we  present  a  software  tool  for  elicitation  and  management  of  process  metadata.   It  follows  our  previously  published design idea of an assistant for researchers that aims at minimizing the additional effort required for producing a sustainable workflow documentation.   With  the  ever-growing  number  of  linguistic  resources  available,  it  also  becomes  increasingly  important  to  provide proper  documentation  to  make  them  comparable  and  to  allow  meaningful  evaluations  for  specific  use  cases.   The  often  prevailing practice  of  post  hoc  documentation  of  resource  generation  or  research  processes  bears  the  risk  of  information  loss.   Not  only  does detailed documentation of a process aid in achieving reproducibility, it also increases usefulness of the documented work for others asa cornerstone of good scientific practice.  Time pressure together with the lack of simple documentation methods leads to workflow documentation in practice being an arduous and often neglected task. Our tool ensures a clean documentation for common workflows innatural language processing and digital humanities. Additionally, it can easily be integrated into existing institutional infrastructures.","1. one sentence summary of what paper is about
-[text]
+Demo paper describing the system build for workflow management.
 2. paper's central goal/question/hypothesis
-[text]
+Build a workflow management tool; supporting process documentation by using version control as foundation
 3. methodology
-[text]
+Implemented the tool in Java, open-sourced for reproducible research.
 4. reported results
-[text]
+NA
 5. paper's conclusions and/or main contributions
-[text]
-",,,,
+""RePlay-DH"" system description, motivating its use case from the point of reporoducibility
+",Claerbout and Karrenbach (1992) ,marginal relevance,,,,
 "@inproceedings{horsmann-zesch-2018-deeptc,
     title = ""{D}eep{TC} {--} An Extension of {DKP}ro Text Classification for Fostering Reproducibility of Deep Learning Experiments"",
     author = ""Horsmann, Tobias  and
@@ -448,16 +420,19 @@ model definition, library versions and dependencies should be specified either t
 }
 ","Horsmann, Tobias  and
       Zesch, Torsten",{D}eep{TC} {--} An Extension of {DKP}ro Text Classification for Fostering Reproducibility of Deep Learning Experiments,Proceedings of the Eleventh International Conference on Language Resources and Evaluation ({LREC} 2018),2018,LREC,"We present a deep learning extension for the multi-purpose text classification framework DKPro Text Classification (DKPro TC). DKProTC is a flexible framework for creating easily shareable and reproducible end-to-end NLP experiments involving machine learning. We provide an overview of the current state of DKPro TC, which does not allow integration of deep learning, and discuss the necessary conceptual extensions.  These extensions are based on an analysis of common deep learning setups found in the literature to support all common text classification setups, i.e. single outcome, multi outcome, and sequence classification problems.  Additionally to providing an end-to-end shareable environment for deep learning experiments, we provide convenience features that take care of repetitive steps, such as pre-processing, data vectorization and pruning of embeddings.  By moving a large part of this boilerplate code into DKPro TC, the actual deep learning framework code improves in readability and lowers the amount of redundant source code considerably.  As proof-of-concept, we integrate Keras, DyNet, and DeepLearning4J.","1. one sentence summary of what paper is about
-[text]
+Demo paper describing DeepTC an extension of previous DKProTC framework for creating sharable and reproducible text classification models.
 2. paper's central goal/question/hypothesis
-[text]
+Provide overview of the DL extension and integrate three libraries (Keras, DyNet and Deeplearning 4J) 
 3. methodology
-[text]
+Implemented plain LSTM in three frameworks (Keras, DyNet and Deeplearning 4J) and experiment on WSJ for PoS tagging. Compared with shallow CRF from DKProTC
 4. reported results
-[text]
+Accuracy on WSJ sections using reproduction is reported. However the original results claimed by the different frameworks is not provided. 
 5. paper's conclusions and/or main contributions
-[text]
-",,,,
+Open-source system with DL extension. Showed that replication study allows to replicate state-of-the-art result but didnt compare with the original. 
+",None,"* frequent challenges to re- production of deep learning experiment incomplete data preparation steps, embedding preparations tasks, and the vectorization of data into an integer representation.
+* Didnt compare the reproduced results with original. However makes the following important points regarding DL 
+The rapid development of deep learning software creates practical limitations to reproducibility and convenience
+Many deep learning frameworks are still under rapid development and, thus, change quickly with bugs being fixed and APIs being updated.",,,,
 "@article{wieling-etal-2018-squib,
     title = ""{S}quib: Reproducibility in Computational Linguistics: Are We Willing to Share?"",
     author = ""Wieling, Martijn  and
@@ -485,7 +460,7 @@ Results provided for each of the 10 papers selected for reproduction. Unclear ho
 5. paper's conclusions and/or main contributions
 Obtainability of code and data substantially improved from 2011 to 2016, more dramatically for code. Higher citation counts for papers with linked data and code.
 ","``In line with Liberman (2015) and Barba (2018), we reject the unfortunate swap in the meaning of reproduction and replication by Drummond (2009). Consequently, with reproduction (or reproducibility), we denote the exact re-creation of the results reported in a publication using the same data and methods.'' ","* the methodology used is not very rigorous, e.g. MSc student doing the reproduction, random 8h cut-off, unexplained selection of scorres for reproduction
-* other papers e.g. Mieskes et al. (2019) over-interpret this study e.g. claiming only a single reproduction obtained the same results and 60% of attempts failed. ",,
+* other papers e.g. Mieskes et al. (2019) over-interpret this study e.g. claiming only a single reproduction obtained the same results and 60% of attempts failed. ",,,,
 "@inproceedings{htut-etal-2018-grammar-induction,
     title = ""Grammar Induction with Neural Language Models: An Unusual Replication"",
     author = ""Htut, Phu Mon  and
@@ -517,18 +492,21 @@ We find that the results of this work are robust:
 All variants of the model under study outperform all latent tree learning baselines, and perform competitively with symbolic grammar
 induction systems. We find that this model
 represents the first empirical success for latent tree learning, and that neural network language modeling warrants further study as a
-setting for grammar induction.","AB: is this the same paper as htut-etal-2018-grammar ? urls are different, but title and authors are the same.   SA: that seems like an abstract while this is a short paper
+setting for grammar induction.","
 1. one sentence summary of what paper is about
-[text]
+Replicate the PRPN model (Shen et al., 2018) learns and under what conditions for language modeling and grammar induction
 2. paper's central goal/question/hypothesis
-[text]
+Is the PRPN model (Shen et al., 2018) robust? 
 3. methodology
-[text]
+Used author's available code; did not re-implement or re-tune PRPN. However, they do not report reults of the replication, if they were exactly reproducible or not.  
 4. reported results
-[text]
+Parsing F1 results evaluated on full WSJ10 and WSJ while perplexity on the WSJ test set for language modeling. Did not compare with the Shen et al. 
 5. paper's conclusions and/or main contributions
-[text]
-",,,,https://www.aclweb.org/anthology/D18-1544
+Find several experimental design problems that make the results difficult to interpret; however the model is found to be robust
+",No,"AB: is this the same paper as htut-etal-2018-grammar ? urls are different, but title and authors are the same. 
+SA: that paper seems like an abstract while this is a short paper
+
+** doesnt seem like a replication study",,https://www.aclweb.org/anthology/D18-1544,,
 "@inproceedings{moore-rayson-2018-bringing,
     title = ""Bringing replication and reproduction together with generalisability in {NLP}: Three reproduction studies for Target Dependent Sentiment Analysis"",
     author = ""Moore, Andrew  and
@@ -561,7 +539,7 @@ Accuracy is compared for the reproduced results with Vo and Zhang and Wang et al
 5. paper's conclusions and/or main contributions
 Able to reproduce results of three papers. Provided mass evaluation of the approaches on six different English datasets
 ","Followed definitions in Antske Fokkens’ guest blog post replication (obtaining the same results using the same
-experiment) as well as reproduction (reach the same conclusion through different means).  http://coling2018. org/slowly-growing-offspring-zigglebottom-anno-2017-guest-post/","SemEval 2016 task 5 (Pontiki et al., 2016) only 1 out of 21 papers released their source code.  Louridas and Gousios (2012) provided requirements in Software Engineering for reproducibility - (a) All data related to the paper, (b) All code required to reproduce the paper and (c) Documentation for the code and data. Fokkens et al. (2013) in WordNet similarity and Named Entity Recognition provided 5 key aspects (a) pre-processing, (b) experimental setup, (c) versioning, (d) system output, (e) system variation.   Makes a point about incomplete descriptions of methods and settings, patchy release of code, and lack of comparative evaluations in previous research",Yes,
+experiment) as well as reproduction (reach the same conclusion through different means).  http://coling2018. org/slowly-growing-offspring-zigglebottom-anno-2017-guest-post/","SemEval 2016 task 5 (Pontiki et al., 2016) only 1 out of 21 papers released their source code.  Louridas and Gousios (2012) provided requirements in Software Engineering for reproducibility - (a) All data related to the paper, (b) All code required to reproduce the paper and (c) Documentation for the code and data. Fokkens et al. (2013) in WordNet similarity and Named Entity Recognition provided 5 key aspects (a) pre-processing, (b) experimental setup, (c) versioning, (d) system output, (e) system variation.   Makes a point about incomplete descriptions of methods and settings, patchy release of code, and lack of comparative evaluations in previous research",Yes,,,
 "@inproceedings{pierrejean-tanguy-2018-etude,
     title = ""Etude de la reproductibilit{\'e} des word embeddings : rep{\'e}rage des zones stables et instables dans le lexique (Reproducibility of word embeddings : identifying stable and unstable zones in the semantic space)"",
     author = ""Pierrejean, B{\'e}n{\'e}dicte  and
@@ -586,7 +564,7 @@ experiment) as well as reproduction (reach the same conclusion through different
 [text]
 5. paper's conclusions and/or main contributions
 [text]
-",,,,
+",,,,,,
 "@inproceedings{van-miltenburg-etal-2019-task,
     title = ""On task effects in {NLG} corpus elicitation: a replication study using mixed effects modeling"",
     author = ""van Miltenburg, Emiel  and
@@ -617,7 +595,7 @@ Collected additional written Dutch descriptions to supplement the spoken data fr
 Results are not compared for the values but instead on the findings and the conclusions. Statistics and p-values are reported for the difference spoken and written descriptions 
 5. paper's conclusions and/or main contributions
 Effects of modality largely disappear in a controlled setting - modality alone has a minimal effect on the content of the descriptions 
-",,- Not exactly aiming for reproducibility but to measure the impact of controlled data collection on the replication study ,- Not exactly aiming for reproducibility but to measure the impact of controlled data collection on the replication study ,
+",,- Not exactly aiming for reproducibility but to measure the impact of controlled data collection on the replication study ,- Not exactly aiming for reproducibility but to measure the impact of controlled data collection on the replication study ,,,
 "@inproceedings{fortuna-etal-2019-stop,
     title = ""Stop {P}ropag{H}ate at {S}em{E}val-2019 Tasks 5 and 6: Are abusive language classification results reproducible?"",
     author = ""Fortuna, Paula  and
@@ -646,7 +624,7 @@ System could not be recreated because of missing information and serious bug det
 full code sharing is only way to achieve reproducibility; results in Badjitya et al. are not reliable; similar, corrected system did well at one shared task, less well at the other which may be connected to inconsistencies between training and test data in the latter
 ","* this is quite an adversarial reproduction attempt
 * they cite Lee et al (2018) as also having tried and failed to reproduce the Badjitya et al work but that paper doesn't mention such an attempt
-* still, the rest of it seems robust and rigorous enough",marginal,,
+* still, the rest of it seems robust and rigorous enough",marginal,,,,
 "@inproceedings{mieskes-etal-2019-community,
     title = ""Community Perspective on Replicability in Natural Language Processing"",
     author = {Mieskes, Margot  and
@@ -678,7 +656,7 @@ headline results: 24.9% of attempts to reproduce own work, and 56.7% of attempts
 5. paper's conclusions and/or main contributions
 currently over half of reproduction attempts fail; maily because of unavailability of resources and documentaiton; authors should run reproduction attempts themselves before publication, then release the attempt for others to use; NLP community needs to develop guidelines; reproducibility-aware reviewing and community-developed guidelines would help 
 ","* is this representative: 38% PGR or Post-doc; 39% academic appointment; 22% other (=industry?)
-* recruitment via mailling lists and LinkedIn - what was effect of self-selection?",,,
+* recruitment via mailling lists and LinkedIn - what was effect of self-selection?",,,,,
 "@inproceedings{wu-etal-2019-errudite,
     title = ""{E}rrudite: Scalable, Reproducible, and Testable Error Analysis"",
     author = ""Wu, Tongshuang  and
@@ -698,16 +676,15 @@ currently over half of reproduction attempts fail; maily because of unavailabili
       Ribeiro, Marco Tulio  and
       Heer, Jeffrey  and
       Weld, Daniel","{E}rrudite: Scalable, Reproducible, and Testable Error Analysis",Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics,2019,ACL,"Though error analysis is crucial to understanding and improving NLP models, the common practice of manual, subjective categorization of a small sample of errors can yield biased and incomplete conclusions. This paper codifies model and task agnostic principles for informative error analysis, and presents Errudite, an interactive tool for better supporting this process. First, error groups should be precisely defined for reproducibility; Errudite supports this with an expressive domain-specific language. Second, to avoid spurious conclusions, a large set of instances should be analyzed, including both positive and negative examples; Errudite enables systematic grouping of relevant instances with filtering queries. Third, hypotheses about the cause of errors should be explicitly tested; Errudite supports this via automated counterfactual rewriting. We validate our approach with a user study, finding that Errudite (1) enables users to perform high quality and reproducible error analyses with less effort, (2) reveals substantial ambiguities in prior published error analyses practices, and (3) enhances the error analysis experience by allowing users to test and revise prior beliefs.","1. one sentence summary of what paper is about
-[text]
+Demo paper which presents Errudite, an interactive tool for informative error analysis. 
 2. paper's central goal/question/hypothesis
-[text]
+Characterize deficiencies with current error analysis methods used in NLP which can lead to high variance and low reproducibility
 3. methodology
-[text]
+Error analysis of BiDAF on SQuAD using Errudite. Presents user study to study ambiguities in prior error analysis studies.
 4. reported results
-[text]
+Mainly demo paper. Error coverage has been reported of replicating Seo et al. (Figure 7). High variance observed by user-defined groups in replication study.
 5. paper's conclusions and/or main contributions
-[text]
-",,,,
+Motivated the use of the tool. Users unable to consistently replicate the analysis of Seo et al. (2016) due to the ambiguity inherent in manual grouping. ",None,* Not exactly reproducibility paper,,,Long,
 "@article{zhang-duh-2020-reproducible,
     title = ""Reproducible and Efficient Benchmarks for Hyperparameter Optimization of Neural Machine Translation Systems"",
     author = ""Zhang, Xuan  and
@@ -747,7 +724,7 @@ Ran a large collection of NMT models with various hyperparameter configuration a
 4. reported results
 Used 3 evaluation metric fixed-target all (fta), fixed-target one (fto) and fixed-budget (fbp) based on measuring runtime and provided benchmark results.   
 5. paper's conclusions and/or main contributions
-3 fold - 1. Released large collection of trained NMT models 2. Proposed eval metrics for HPO 3. Reproducible benchmark / dataset",Followed two notions of reproducibility from Li and Talwalkar (2019): exact reproducibility (the reproducibility of reported experimental results); and broad reproducibility (the generalization of the experimental results),"Not trying reproducing any results but create a benchmark dataset. Argues that their benchmarks are exact reproducible (provide the tables that record all model results). Might not be broad reproducible, because the generalizability of the results might be restricted due to fixed collections of hyperparameter and variance associated with multiple runs",,
+3 fold - 1. Released large collection of trained NMT models 2. Proposed eval metrics for HPO 3. Reproducible benchmark / dataset",Followed two notions of reproducibility from Li and Talwalkar (2019): exact reproducibility (the reproducibility of reported experimental results); and broad reproducibility (the generalization of the experimental results),"Not trying reproducing any results but create a benchmark dataset. Argues that their benchmarks are exact reproducible (provide the tables that record all model results). Might not be broad reproducible, because the generalizability of the results might be restricted due to fixed collections of hyperparameter and variance associated with multiple runs",,,,
 "@inproceedings{born-etal-2020-dataset,
     title = ""Dataset Reproducibility and {IR} Methods in Timeline Summarization"",
     author = ""Born, Leo  and
@@ -776,7 +753,7 @@ A choice of an IR method impacts results of TLS. Also, performance of TLS system
 5. paper's conclusions and/or main contributions
 The study advocates for including IR into the development of TLS systems. That would make corpus collection for TLS reproducible.",no,"It is not a study on reproducibility per se.
 
-Problem with TLS research: most of the corpora created for timeline summarisation are not publicly available; the corpora are collected via commercial search engines (this method is not reproducible and has biases).",,
+Problem with TLS research: most of the corpora created for timeline summarisation are not publicly available; the corpora are collected via commercial search engines (this method is not reproducible and has biases).",,,,
 "@inproceedings{antonio-rodrigues-etal-2020-reproduction,
     title = ""Reproduction and Revival of the Argument Reasoning Comprehension Task"",
     author = ""Ant{\'o}nio Rodrigues, Jo{\~a}o  and
@@ -810,7 +787,7 @@ Ran systems on the debiased dataset, showed that scores are lower, calls for a n
 
 Replication, the practice of independently implementing scientific experiments to validate specific findings, is the cornerstone of discovering scientific truth. Related to replication is reproducibility, which is the calculation of quantitative scientific results by independent scientists using the original data sets and methods",,"the challenge ranking was reproduced. Some systems were harder to reproduce than others due to lack of instructions, library versioning, etc.
 
-not part of REPROLANG",
+not part of REPROLANG",,,
 "@inproceedings{branco-etal-2020-shared,
     title = ""A Shared Task of a New, Collaborative Type to Foster Reproducibility: A First Exercise in the Area of Language Science and Technology with {REPROLANG}2020"",
     author = ""Branco, Ant{\'o}nio  and
@@ -831,6 +808,7 @@ not part of REPROLANG",
     pages = ""5539--5545"",
     language = ""English"",
     ISBN = ""979-10-95546-34-4"",
+    abstract = ""In this paper, we introduce a new type of shared task — which is collaborative rather than competitive — designed to support and foster the reproduction of research results. We also describe the first event running such a novel challenge, present the results obtained, discuss the lessons learned and ponder on future undertakings."",
 }
 ","Branco, Ant{\'o}nio  and
       Calzolari, Nicoletta  and
@@ -840,7 +818,7 @@ not part of REPROLANG",
       Silva, Jo{\~a}o  and
       Gomes, Lu{\'\i}s  and
       Moreira, Andr{\'e}  and
-      Elbers, Willem","A Shared Task of a New, Collaborative Type to Foster Reproducibility: A First Exercise in the Area of Language Science and Technology with {REPROLANG}2020",Proceedings of The 12th Language Resources and Evaluation Conference,2020,LREC,"In this paper, we introduce a new type of shared task — which is collaborative rather than competitive — designed to support and fosterthe reproduction of research results. We also describe the first event running such a novel challenge, present the results obtained, discussthe lessons learned and ponder on future undertakings.","1. one sentence summary of what paper is about
+      Elbers, Willem","A Shared Task of a New, Collaborative Type to Foster Reproducibility: A First Exercise in the Area of Language Science and Technology with {REPROLANG}2020",Proceedings of The 12th Language Resources and Evaluation Conference,2020,LREC,"In this paper, we introduce a new type of shared task — which is collaborative rather than competitive — designed to support and foster the reproduction of research results. We also describe the first event running such a novel challenge, present the results obtained, discuss the lessons learned and ponder on future undertakings.","1. one sentence summary of what paper is about
 Paper describes the design, organisation and results of the REPROLANG shared task at LREC
 2. paper's central goal/question/hypothesis
 To investigate designing a reproduction shared task and to produce results through the shared task which give insight about ability, difficulty and requirements for reproducing results from published papers across NLP
@@ -852,7 +830,7 @@ Shared task committee selected a final set of papers for reproduction via call f
 reproductions generally possible; author collaboration helpful, but need to expand to reproducing any paper; shared task deemed a success.","* scoring of submissions confounds recreatability and reproducibility, as well as missing information and reproduction difficulties
 * these were all collaborative reproduction attempts, so this is maybe not surprising: ""in general, the target papers pre-sented no special problems for their reproduction""
 * one conclusion is that task may be more useful if reproduction of any paper is allowed rather than just those volunteered by their authors, but why not cite the Reproducibility Challenge in ML in this context?
-* shame that submissions were not summarised - the real interest here would have been generalising over and drawing conclusions from all of the 11 reproduction outcomes",,,
+* shame that submissions were not summarised - the real interest here would have been generalising over and drawing conclusions from all of the 11 reproduction outcomes",,,,,
 "@inproceedings{garneau-etal-2020-robust,
     title = ""A Robust Self-Learning Method for Fully Unsupervised Cross-Lingual Mappings of Word Embeddings: Making the Method Robustly Reproducible as Well"",
     author = ""Garneau, Nicolas  and
@@ -884,7 +862,7 @@ Used the provided codebase of Artetxe et al. Some missing parts (for ablation st
 Main results from Artetxe et al were reproduced; their ablation studies were also reproduced with one experiment reproduction being unsuccessful. The algorithm performs less well on pairs of distant languages (not reported in the original study).
 5. paper's conclusions and/or main contributions
 The method of Artetxe et al is robust, when applied to the pairs of languages that share some commonalities. It seems to be not that robust with other pairs of languages (tested on EN-{ET, FA, LV, VI}). Recommendations for reproducibility (logging, dataset versionining, dockerisation)
-",,,the main results --- yes,
+",,,the main results --- yes,,,
 "@inproceedings{khoe-2020-reproducing,
     title = ""Reproducing a Morphosyntactic Tagger with a Meta-{B}i{LSTM} Model over Context Sensitive Token Encodings"",
     author = ""Khoe, Yung Han"",
@@ -914,7 +892,7 @@ chose not to contact authors, but asked some questions via github issues;
 
 published code differed from the paper;
 
-[AS note:] hard to draw a conclusion if reproducible or not from numbers, since accuracies in POS varies in decimal points","according to the author, only partial reproduction: only morphological tagging, but not POS tagging",
+[AS note:] hard to draw a conclusion if reproducible or not from numbers, since accuracies in POS varies in decimal points","according to the author, only partial reproduction: only morphological tagging, but not POS tagging",,,
 "@inproceedings{rim-etal-2020-reproducing,
     title = ""Reproducing Neural Ensemble Classifier for Semantic Relation Extraction in{S}cientific Papers"",
     author = ""Rim, Kyeongmin  and
@@ -946,7 +924,7 @@ One subtask was reproduced with 1 point difference in F1. Three other subtasks g
 Reimplemented the system of Rotsztjein et al (2018). Important details were left unknown in the original paper, which hampered reproduction.
 ",no,"additional data collection, preprocessing and cleaning were not specified in the original paper. Had to guess a lot of details.
 
-how reproduced scores would affect the system rating at SemEval was not covered",partially,
+how reproduced scores would affect the system rating at SemEval was not covered",partially,,,
 "@inproceedings{abdellatif-elgammal-2020-ulmfit,
     title = ""{ULMF}i{T} replication"",
     author = ""Abdellatif, Mohamed  and
@@ -972,7 +950,7 @@ Used bi-directional Universal Language Model Fine-tuning (ULMFiT) model from the
 Test error rates (%) reported for all the task comparing the reproduced model with the original paper.  
 5. paper's conclusions and/or main contributions
 ""Verified"" the reproducibility of Howard and Ruder (2018) transfer learning methodology and ""Extended"" the model on non-English datasets. Highlighed the 3 dimensions of reproducibiliy in their results. 
-",Followed the definition of replicability and reproducibiltiy by Cohen et al. (2018). Provides extensive details for both replicability and reproducibility while also highlighting the three dimensions of reproduciblitiy in their results,Did not aim for exact replication because of hardware limitataions. Tried to get the results in the same ball park. ,Yes,
+",Followed the definition of replicability and reproducibiltiy by Cohen et al. (2018). Provides extensive details for both replicability and reproducibility while also highlighting the three dimensions of reproduciblitiy in their results,Did not aim for exact replication because of hardware limitataions. Tried to get the results in the same ball park. ,Yes,,,
 "@inproceedings{bestgen-2020-reproducing,
     title = ""Reproducing Monolingual, Multilingual and Cross-Lingual {CEFR} Predictions"",
     author = ""Bestgen, Yves"",
@@ -987,16 +965,17 @@ Test error rates (%) reported for all the task comparing the reproduced model wi
     ISBN = ""979-10-95546-34-4"",
 }
 ","Bestgen, Yves","Reproducing Monolingual, Multilingual and Cross-Lingual {CEFR} Predictions",Proceedings of The 12th Language Resources and Evaluation Conference,2020,LREC,"This study aims to reproduce the research of Vajjala and Rama (2018) which showed that it is possible to predict the quality of a textwritten by learners of a given language by means of a model built on the basis of texts written by learners of another language.  Theseauthors also pointed out that POStag and dependency n-grams were significantly more effective than text length and global linguisticindices frequently used for this kind of task. The analyses performed show that some important points of their code did not correspond tothe explanations given in the paper. These analyses confirm the possibility to use syntactic n-gram features in cross-lingual experimentsto categorize texts according to their CEFR level (Common European Framework of Reference for Languages).  However, text lengthand  some  classical  indexes  of  readability  are  much  more  effective  in  the  monolingual  and  the  multilingual  experiments  than  whatVajjala and Rama concluded and are even the best performing features when the cross-lingual task is seen as a regression problem.This study emphasized the importance for reproducibility of setting explicitly the reading order of the instances when using a K-foldCV procedure and, more generally, the need to properly randomize these instances before.  It also evaluates a two-step procedure todetermine the degree of statistical significance of the differences observed in a K-fold cross-validation schema and argues against theuse of a Bonferroni-type correction in this context.","1. one sentence summary of what paper is about
-[text]
+Reproduction and analysis of the system of Vajjala and Rama (2018) for automatic essay scoring, which uses supervised learning techniques (SVM, Random Forest, Logistic Regression).
 2. paper's central goal/question/hypothesis
-[text]
+Is a cross-lingual classifier possible (i.e. learn a predictive model on one language and test on another) as suggested in Vajjala and Rama?
 3. methodology
-[text]
+Reproducing following the original code (two runs with and without docker). Conducted a robust cross-validation study. 
 4. reported results
-[text]
+Two runs of reproduction gave different results due to the unstable cross-validation and unrandomised instances. Mixed reproduction results depending on the feature set.  
 5. paper's conclusions and/or main contributions
-[text]
-",,,,
+The cross-lingual experiment of Vajjala and Rama was proven right, however some features seem to have more impact than claimed in the initial paper.
+",no,F1 calculation (weighted or not) differs in the paper and in the code.,"Partially confirmed the finding.
+Hard to tell about the reproduction, since 46 reproduced scores with deviations from -0.11 to +0.24 in F1-score.",,,
 "@inproceedings{huber-coltekin-2020-reproduction,
     title = ""Reproduction and Replication: A Case Study with Automatic Essay Scoring"",
     author = {Huber, Eva  and
@@ -1013,16 +992,18 @@ Test error rates (%) reported for all the task comparing the reproduced model wi
 }
 ","Huber, Eva  and
       {\c{C}}{\""o}ltekin, {\c{C}}a{\u{g}}r{\i}",Reproduction and Replication: A Case Study with Automatic Essay Scoring,Proceedings of The 12th Language Resources and Evaluation Conference,2020,LREC,"As in many experimental sciences, reproducibility of experiments has gained ever more attention in the NLP community. This paper presents our reproduction efforts of an earlier study of automatic essay scoring (AES) for determining the proficiency of second language learners in a multilingual setting. We present three sets of experiments with different objectives. First, as prescribed by the LREC 2020 REPROLANG shared task, we rerun the original AES system using the code published by the original authors on the same dataset. Second, we repeat the same experiments on the same data with a different implementation. And third, we test the original system on a different dataset and a different language. Most of our findings are in line with the findings of the original paper. Nevertheless, there are some discrepancies between our results and the results presented in the original paper. We report and discuss these differences in detail. We further go into some points related to confirmation of research findings through reproduction, including the choice of the dataset, reporting and accounting for variability, use of appropriate evaluation metrics, and making code and data available. We also discuss the varying uses and differences between the terms reproduction and replication, and we argue that reproduction, the confirmation of conclusions through independent experiments in varied settings is more valuable than exact replication of the published values.","1. one sentence summary of what paper is about
-[text]
+Reproduction of the automatic essay scoring system of Vajjala and Rama (2018). Part of REPROLANG.
 2. paper's central goal/question/hypothesis
-[text]
+Is the system of Vajjala and Rama replicable and reproducible? Can their findings be confirmed on other datasets?
 3. methodology
-[text]
+Three methods for recreation: running same code, reimplementing, testing on another language (English). For reimplementation, parameters were optimised, rathern than using libraries' defaults like in the original paper. For testing on English, used the CLC corpus with 12 classes (was also reduced to 5 and 3 in the experiments), which is less heterogeneous than the initial dataset. 
 4. reported results
-[text]
+Reproduced scores differ from the original ones, but mostly confirm initial findings. The tuned model yielded better scores.  Some conclusions are not the same, such as the importance of some features, and multilingual transfer. Testing on the CLC gave much lower results due to the different nature of the corpus.
 5. paper's conclusions and/or main contributions
-[text]
-",,,,
+Tune your machine learning models. Test on different datasets.
+",yes (the whole backround section on repro* terms),"""The overemphasis on exact replication of published  values  may  even  have  unintended  effects,  such  as encouraging researchers to ‘hide’ the natural variation that is expected in the task.""","according to the authors, mostly yes.
+
+AS: High deviations in scores. 46 reproduced scores with deviations from -17 to 22 in F1.",,Long,
 "@inproceedings{ballier-etal-2020-learnability,
     title = ""The Learnability of the Annotated Input in {NMT} Replicating (Vanmassenhove and Way, 2018) with {O}pen{NMT}"",
     author = ""Ballier, Nicolas  and
@@ -1036,23 +1017,25 @@ Test error rates (%) reported for all the task comparing the reproduced model wi
     publisher = ""European Language Resources Association"",
     url = ""https://www.aclweb.org/anthology/2020.lrec-1.691"",
     pages = ""5631--5640"",
+    abstract = ""In this paper, we reproduce some of the experiments related to neural network training for Machine Translation as reported in (Vanmassenhove and Way, 2018). They annotated a sample from the EN-FR and EN-DE Europarl aligned corpora with syntactic and semantic annotations to train neural networks with the Nematus Neural Machine Translation (NMT) toolkit. Following the original publication, we obtained lower BLEU scores than the authors of the original paper, but on a more limited set of annotations. In the second half of the paper, we try to analyze the difference in the results obtained and suggest some methods to improve the results. We discuss the Byte Pair Encoding (BPE) used in the pre-processing phase and suggest feature ablation in relation to the granularity of syntactic and semantic annotations. The learnability of the annotated input is discussed in relation to existing resources for the target languages. We also discuss the feature representation likely to have been adopted for combining features."",
     language = ""English"",
     ISBN = ""979-10-95546-34-4"",
-}
-","Ballier, Nicolas  and
+}","Ballier, Nicolas  and
       Amari, Nabil  and
       Merat, Laure  and
       Yun{\`e}s, Jean-Baptiste","The Learnability of the Annotated Input in {NMT} Replicating (Vanmassenhove and Way, 2018) with {O}pen{NMT}",Proceedings of The 12th Language Resources and Evaluation Conference,2020,LREC,"In this paper, we reproduce some of the experiments related to neural network training for Machine Translation as reported in (Vanmassenhove and Way, 2018). They annotated a sample from the EN-FR and EN-DE Europarl aligned corpora with syntactic and semantic annotations to train neural networks with the Nematus Neural Machine Translation (NMT) toolkit. Following the original publication, we obtained lower BLEU scores than the authors of the original paper, but on a more limited set of annotations. In the second half of the paper, we try to analyze the difference in the results obtained and suggest some methods to improve the results. We discuss the Byte Pair Encoding (BPE) used in the pre-processing phase and suggest feature ablation in relation to the granularity of syntactic and semantic annotations. The learnability of the annotated input is discussed in relation to existing resources for the target languages. We also discuss the feature representation likely to have been adopted for combining features.","1. one sentence summary of what paper is about
-[text]
+Reproduced Vanmassenhove and Way, 2018---the MT system with semantic and syntactic features, and outlined ways to improve the system.
 2. paper's central goal/question/hypothesis
-[text]
+Is the method of Vanmassenhove and Way, 2018 reproducible? What improvements would make the system perform better?
 3. methodology
-[text]
+Reimplemented the code (original was not available). Had to reannotate the data with CCG and wordnet tags. Introduced additional feature ablation studies.
 4. reported results
-[text]
+Rated recreation 4/5 (5 being the most difficult); after the author sent some missing data, the rating went down to 2/5. For the recreated baseline, BLEU is ~11.5 against 21-22 in the original paper.
 5. paper's conclusions and/or main contributions
-[text]
-",,,,
+Describe the recreation process of Vanmassenhave and Way, 2018; propose suggestions for improving their MT system.
+",no,"The replication was only partial: two scores were reproduced. Not clear: for suggested ablations, didn't run any experiments?
+
+Described their reproducibility effort in terms of the FAIR paradigm (was not very clear for me).",hard to reproduce; BLEU scores lower than reported (-10 points),,,
 "@inproceedings{millour-etal-2020-repliquer,
     title = ""R{\'e}pliquer et {\'e}tendre pour l{'}alsacien {``}{\'E}tiquetage en parties du discours de langues peu dot{\'e}es par sp{\'e}cialisation des plongements lexicaux{''} (Replicating and extending for {A}lsatian : {``}{POS} tagging for low-resource languages by adapting word embeddings{''})"",
     author = {Millour, Alice  and
@@ -1080,142 +1063,14 @@ Found the documentation of what was done in the original work very incomplete an
 5. paper's conclusions and/or main contributions
 Precise documentation about implementations and system and dataset versions is crucial for reproduction attempts.
 ","* One result (0.78) on the smallest version of the corpus is described as being reproduced but it's not clear what it was compared to as original paper does not have that number in it.
-* this is in French, as is the original paper",,,
-"@inproceedings{plucinski-etal-2020-closer,
-    title = ""A Closer Look on Unsupervised Cross-lingual Word Embeddings Mapping"",
-    author = ""Pluci{\'n}ski, Kamil  and
-      Lango, Mateusz  and
-      Zimniewicz, Micha{\l}"",
-    booktitle = ""Proceedings of The 12th Language Resources and Evaluation Conference"",
-    month = may,
-    year = ""2020"",
-    address = ""Marseille, France"",
-    publisher = ""European Language Resources Association"",
-    url = ""https://www.aclweb.org/anthology/2020.lrec-1.682"",
-    pages = ""5555--5562"",
-    abstract = ""In this work, we study the unsupervised cross-lingual word embeddings mapping method presented by Artetxe et al. (2018). First, wesuccessfully reproduced the experiments performed in the original work, finding only minor differences. Furthermore, we verified themethod{'}s robustness on different embedding representations and new language pairs, particularly these involving Slavic languages likePolish or Czech. We also performed an experimental analysis of the impact of the method{'}s parameters on the final result. Finally, welooked for an alternative way of initialization, which directly relies on the isometric assumption. Our work confirms the results presentedearlier, at the same time pointing at interesting problems occurring while using the method with different types of embeddings or onless-common language pairs."",
-    language = ""English"",
-    ISBN = ""979-10-95546-34-4"",
-}","Pluci{\'n}ski, Kamil  and
-      Lango, Mateusz  and
-      Zimniewicz, Micha{\l}",A Closer Look on Unsupervised Cross-lingual Word Embeddings Mapping,Proceedings of The 12th Language Resources and Evaluation Conference,2020,LREC,"In this work, we study the unsupervised cross-lingual word embeddings mapping method presented by Artetxe et al. (2018). First, wesuccessfully reproduced the experiments performed in the original work, finding only minor differences. Furthermore, we verified themethod{'}s robustness on different embedding representations and new language pairs, particularly these involving Slavic languages likePolish or Czech. We also performed an experimental analysis of the impact of the method{'}s parameters on the final result. Finally, welooked for an alternative way of initialization, which directly relies on the isometric assumption. Our work confirms the results presentedearlier, at the same time pointing at interesting problems occurring while using the method with different types of embeddings or onless-common language pairs.","1. one sentence summary of what paper is about
-Reproduction of Artexte et al (2018) and checking the sensitivity of the method's parameters (e.g., fasttext vs. word2vec for embedding representations).
-2. paper's central goal/question/hypothesis
-Is the method of Artexte et al reproducible and robust, given different parameters?
-3. methodology
-Reimplemented the method from its original description with some commonsense assumptions. Tested several method's properties to check robustness (dictionary size, new languages, embedding representation type, unsupervised initialisation).
-4. reported results
-Main results were reproduced except one ablation study. Additional, not closely-related languages didn't show same accuracies as in the original paper. The authors also question the isometric hypothesis and call out for further research in this direction.
-5. paper's conclusions and/or main contributions
-The method is reproducible, however changing some parameters may lead to the method's instability, mainly different pairs of languages. 
-",,reimplemented the method,Yes,
-"@inproceedings{gorman-bedrick-2019-need,
-    title = ""We Need to Talk about Standard Splits"",
-    author = ""Gorman, Kyle  and
-      Bedrick, Steven"",
-    booktitle = ""Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics"",
-    month = jul,
-    year = ""2019"",
-    address = ""Florence, Italy"",
-    publisher = ""Association for Computational Linguistics"",
-    url = ""https://www.aclweb.org/anthology/P19-1267"",
-    doi = ""10.18653/v1/P19-1267"",
-    pages = ""2786--2791"",
-    abstract = ""It is standard practice in speech {\&} language technology to rank systems according to their performance on a test set held out for evaluation. However, few researchers apply statistical tests to determine whether differences in performance are likely to arise by chance, and few examine the stability of system ranking across multiple training-testing splits. We conduct replication and reproduction experiments with nine part-of-speech taggers published between 2000 and 2018, each of which claimed state-of-the-art performance on a widely-used {``}standard split{''}. While we replicate results on the standard split, we fail to reliably reproduce some rankings when we repeat this analysis with randomly generated training-testing splits. We argue that randomly generated splits should be used in system evaluation."",
-}","Gorman, Kyle  and
-      Bedrick, Steven",We Need to Talk about Standard Splits,Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics,2019,ACL,"It is standard practice in speech {\&} language technology to rank systems according to their performance on a test set held out for evaluation. However, few researchers apply statistical tests to determine whether differences in performance are likely to arise by chance, and few examine the stability of system ranking across multiple training-testing splits. We conduct replication and reproduction experiments with nine part-of-speech taggers published between 2000 and 2018, each of which claimed state-of-the-art performance on a widely-used {``}standard split{''}. While we replicate results on the standard split, we fail to reliably reproduce some rankings when we repeat this analysis with randomly generated training-testing splits. We argue that randomly generated splits should be used in system evaluation.","1. one sentence summary of what paper is about
-[text]
-2. paper's central goal/question/hypothesis
-[text]
-3. methodology
-[text]
-4. reported results
-[text]
-5. paper's conclusions and/or main contributions
-[text]
-",,,,
-"@inproceedings{cooper-shardlow-2020-combinmt,
-    title = ""{C}ombi{NMT}: An Exploration into Neural Text Simplification Models"",
-    author = ""Cooper, Michael  and
-      Shardlow, Matthew"",
-    booktitle = ""Proceedings of The 12th Language Resources and Evaluation Conference"",
-    month = may,
-    year = ""2020"",
-    address = ""Marseille, France"",
-    publisher = ""European Language Resources Association"",
-    url = ""https://www.aclweb.org/anthology/2020.lrec-1.686"",
-    pages = ""5588--5594"",
-    abstract = ""This work presents a replication study of Exploring Neural Text Simplification Models (Nisioi et al., 2017). We were able to successfully replicate and extend the methods presented in the original paper. Alongside the replication results, we present our improvements dubbed CombiNMT. By using an updated implementation of OpenNMT, and incorporating the Newsela corpus alongside the original Wikipedia dataset (Hwang et al., 2016), as well as refining both datasets to select high quality training examples. Our work present two new systems, CombiNMT995, which is a result of matched sentences with a cosine similarity of 0.995 or less, and CombiNMT98, which, similarly, runs on a cosine similarity of 0.98 or less. By extending the human evaluation presented within the original paper, increasing both the number of annotators and the number of sentences annotated, with the intention of increasing the quality of the results, CombiNMT998 shows significant improvement over any of the Neural Text Simplification (NTS) systems from the original paper in terms of both the number of changes and the percentage of correct changes made."",
-    language = ""English"",
-    ISBN = ""979-10-95546-34-4"",
-}","Cooper, Michael  and
-      Shardlow, Matthew",{C}ombi{NMT}: An Exploration into Neural Text Simplification Models,Proceedings of The 12th Language Resources and Evaluation Conference,2020,LREC,"This work presents a replication study of Exploring Neural Text Simplification Models (Nisioi et al., 2017). We were able to successfully replicate and extend the methods presented in the original paper. Alongside the replication results, we present our improvements dubbed CombiNMT. By using an updated implementation of OpenNMT, and incorporating the Newsela corpus alongside the original Wikipedia dataset (Hwang et al., 2016), as well as refining both datasets to select high quality training examples. Our work present two new systems, CombiNMT995, which is a result of matched sentences with a cosine similarity of 0.995 or less, and CombiNMT98, which, similarly, runs on a cosine similarity of 0.98 or less. By extending the human evaluation presented within the original paper, increasing both the number of annotators and the number of sentences annotated, with the intention of increasing the quality of the results, CombiNMT998 shows significant improvement over any of the Neural Text Simplification (NTS) systems from the original paper in terms of both the number of changes and the percentage of correct changes made.","1. one sentence summary of what paper is about
-[text]
-2. paper's central goal/question/hypothesis
-[text]
-3. methodology
-[text]
-4. reported results
-[text]
-5. paper's conclusions and/or main contributions
-[text]
-",,,,
-"@inproceedings{caines-buttery-2020-reprolang,
-    title = ""{REPROLANG} 2020: Automatic Proficiency Scoring of {C}zech, {E}nglish, {G}erman, {I}talian, and {S}panish Learner Essays"",
-    author = ""Caines, Andrew  and
-      Buttery, Paula"",
-    booktitle = ""Proceedings of The 12th Language Resources and Evaluation Conference"",
-    month = may,
-    year = ""2020"",
-    address = ""Marseille, France"",
-    publisher = ""European Language Resources Association"",
-    url = ""https://www.aclweb.org/anthology/2020.lrec-1.689"",
-    pages = ""5614--5623"",
-    abstract = ""We report on our attempts to reproduce the work described in Vajjala {\&} Rama 2018, {`}Experiments with universal CEFR classification{'}, as part of REPROLANG 2020: this involves featured-based and neural approaches to essay scoring in Czech, German and Italian. Our results are broadly in line with those from the original paper, with some differences due to the stochastic nature of machine learning and programming language used. We correct an error in the reported metrics, introduce new baselines, apply the experiments to English and Spanish corpora, and generate adversarial data to test classifier robustness. We conclude that feature-based approaches perform better than neural network classifiers for text datasets of this size, though neural network modifications do bring performance closer to the best feature-based models."",
-    language = ""English"",
-    ISBN = ""979-10-95546-34-4"",
-}","Caines, Andrew  and
-      Buttery, Paula","{REPROLANG} 2020: Automatic Proficiency Scoring of {C}zech, {E}nglish, {G}erman, {I}talian, and {S}panish Learner Essays",Proceedings of The 12th Language Resources and Evaluation Conference,2020,LREC,"We report on our attempts to reproduce the work described in Vajjala {\&} Rama 2018, {`}Experiments with universal CEFR classification{'}, as part of REPROLANG 2020: this involves featured-based and neural approaches to essay scoring in Czech, German and Italian. Our results are broadly in line with those from the original paper, with some differences due to the stochastic nature of machine learning and programming language used. We correct an error in the reported metrics, introduce new baselines, apply the experiments to English and Spanish corpora, and generate adversarial data to test classifier robustness. We conclude that feature-based approaches perform better than neural network classifiers for text datasets of this size, though neural network modifications do bring performance closer to the best feature-based models.","1. one sentence summary of what paper is about
-[text]
-2. paper's central goal/question/hypothesis
-[text]
-3. methodology
-[text]
-4. reported results
-[text]
-5. paper's conclusions and/or main contributions
-[text]
-",,,,
-"@inproceedings{arhiliuc-etal-2020-language,
-    title = ""Language Proficiency Scoring"",
-    author = ""Arhiliuc, Cristina  and
-      Mitrovi{\'c}, Jelena  and
-      Granitzer, Michael"",
-    booktitle = ""Proceedings of The 12th Language Resources and Evaluation Conference"",
-    month = may,
-    year = ""2020"",
-    address = ""Marseille, France"",
-    publisher = ""European Language Resources Association"",
-    url = ""https://www.aclweb.org/anthology/2020.lrec-1.690"",
-    pages = ""5624--5630"",
-    abstract = ""The Common European Framework of Reference (CEFR) provides generic guidelines for the evaluation of language proficiency. Nevertheless, for automated proficiency classification systems, different approaches for different languages are proposed. Our paper evaluates and extends the results of an approach to Automatic Essay Scoring proposed as a part of the REPROLANG 2020 challenge. We provide a comparison between our results and the ones from the published paper and we include a new corpus for the English language for further experiments. Our results are lower than the expected ones when using the same approach and the system does not scale well with the added English corpus."",
-    language = ""English"",
-    ISBN = ""979-10-95546-34-4"",
-}","Arhiliuc, Cristina  and
-      Mitrovi{\'c}, Jelena  and
-      Granitzer, Michael",Language Proficiency Scoring,Proceedings of The 12th Language Resources and Evaluation Conference,2020,LREC,"The Common European Framework of Reference (CEFR) provides generic guidelines for the evaluation of language proficiency. Nevertheless, for automated proficiency classification systems, different approaches for different languages are proposed. Our paper evaluates and extends the results of an approach to Automatic Essay Scoring proposed as a part of the REPROLANG 2020 challenge. We provide a comparison between our results and the ones from the published paper and we include a new corpus for the English language for further experiments. Our results are lower than the expected ones when using the same approach and the system does not scale well with the added English corpus.","1. one sentence summary of what paper is about
-[text]
-2. paper's central goal/question/hypothesis
-[text]
-3. methodology
-[text]
-4. reported results
-[text]
-5. paper's conclusions and/or main contributions
-[text]
-",,,,
-,,,,,,,,,,,
-,,,,,,,,16,Left to review,,
-,,,,,,,,10,AB,,
-,,,,,,,,3,AS,,
-,,,,,,,,3,SA,,
+* this is in French, as is the original paper",,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,5,Left to review,,,,
+,,,,,,,,10,AB,,,,
+,,,,,,,,8,AS,,,,
+,,,,,,,,12,SA,,,,
