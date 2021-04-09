@@ -1,6 +1,6 @@
 # A Systematic Review of Reproducibility Research in Natural Language Processing
 
-Anya Belz, Shubham Agarwal, Anastasia Shimorina, Ehud Reiter, "A Systematic Review of Reproducibility Research in Natural Language Processing", EACL 2020. [[arXiv](https://arxiv.org/abs/2103.07929)] [ACL Anthology]
+Anya Belz, Shubham Agarwal, Anastasia Shimorina, Ehud Reiter, "A Systematic Review of Reproducibility Research in Natural Language Processing", EACL 2021. [[arXiv](https://arxiv.org/abs/2103.07929)] [ACL Anthology]
 
 ## List of Papers Reviewed
 
