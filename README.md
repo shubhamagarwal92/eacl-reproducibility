@@ -29,6 +29,8 @@ jupyter notebook
 
 All code resides in the `analysis.ipynb` notebook in the [notebook](./notebooks/analysis.ipynb) folder to reproduce Figure 1.  
 
+![Figure 1](figures/stacked_bar.png)
+
 ## Citing
 
 ```
