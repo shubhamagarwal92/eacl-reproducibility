@@ -20,6 +20,15 @@ pip install matplotlib numpy==1.19.0 pandas nltk wordcloud seaborn
 conda install jupyter
 ```
 
+## Running code
+
+```
+conda activate repro
+jupyter notebook
+```
+
+All code resides in the `analysis.ipynb` notebook in the [notebook](./notebooks/analysis.ipynb) folder to reproduce Figure 1.  
+
 ## Citing
 
 ```
