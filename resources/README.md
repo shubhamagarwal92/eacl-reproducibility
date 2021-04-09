@@ -14,12 +14,6 @@ scoring. *Proceedings of the 12th Language Resources and Evaluation
 Conference*, 5624–5630.
 <https://www.aclweb.org/anthology/2020.lrec-1.690>
 
-Ballier, N., Amari, N., Merat, L., & Yunès, J.-B. (2020). The
-learnability of the annotated input in NMT replicating (vanmassenhove
-and way, 2018) with OpenNMT. *Proceedings of the 12th Language Resources
-and Evaluation Conference*, 5631–5640.
-<https://www.aclweb.org/anthology/2020.lrec-1.691>
-
 Bestgen, Y. (2020). Reproducing monolingual, multilingual and
 cross-lingual CEFR predictions. *Proceedings of the 12th Language
 Resources and Evaluation Conference*, 5595–5602.
