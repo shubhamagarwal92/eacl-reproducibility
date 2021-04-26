@@ -1,6 +1,6 @@
 # A Systematic Review of Reproducibility Research in Natural Language Processing
 
-Anya Belz, Shubham Agarwal, Anastasia Shimorina, Ehud Reiter, "A Systematic Review of Reproducibility Research in Natural Language Processing", EACL 2021. [[arXiv](https://arxiv.org/abs/2103.07929)] [ACL Anthology]
+Anya Belz, Shubham Agarwal, Anastasia Shimorina, Ehud Reiter, "A Systematic Review of Reproducibility Research in Natural Language Processing", EACL 2021. [[arXiv](https://arxiv.org/abs/2103.07929)] [[ACL Anthology](https://www.aclweb.org/anthology/2021.eacl-main.29/)]
 
 ## List of Papers Reviewed
 
@@ -35,12 +35,18 @@ All code resides in the `analysis.ipynb` notebook in the [notebook](./notebooks/
 
 ```
 @inproceedings{belz-etal-2021-systematic,
-    title = {A Systematic Review of Reproducibility Research in Natural Language Processing},
-    author = {Anya Belz and Shubham Agarwal and Anastasia Shimorina and Ehud Reiter},
-    booktitle = "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics",
+    title = "A Systematic Review of Reproducibility Research in Natural Language Processing",
+    author = "Belz, Anya  and
+      Agarwal, Shubham  and
+      Shimorina, Anastasia  and
+      Reiter, Ehud",
+    booktitle = "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
     month = apr,
     year = "2021",
     address = "Online",
-    publisher = "Association for Computational Linguistics"
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2021.eacl-main.29",
+    pages = "381--393",
+    abstract = "Against the background of what has been termed a reproducibility crisis in science, the NLP field is becoming increasingly interested in, and conscientious about, the reproducibility of its results. The past few years have seen an impressive range of new initiatives, events and active research in the area. However, the field is far from reaching a consensus about how reproducibility should be defined, measured and addressed, with diversity of views currently increasing rather than converging. With this focused contribution, we aim to provide a wide-angle, and as near as possible complete, snapshot of current work on reproducibility in NLP, delineating differences and similarities, and providing pointers to common denominators."
 }
 ```
